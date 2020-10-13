@@ -1,19 +1,21 @@
 # artifact-creator
-This app can use to create update artifacts and the script to run in the console.
+This app can use to create update artifacts and generate the script to run in the console.
 
 ### How to use
-copy the jar files and updated product to the same location as the gen.js script file and unzip them.
+copy the jar files and last wum updated product to the same location as the gen.js script file and unzip them.
 
 If you list the files and folder, it should look like bellow.
 
+```
 gen.js                                                
 org.wso2.carbon.apimgt.publisher.feature-6.6.163/     
 org.wso2.carbon.apimgt.store.feature-6.6.163/         
 wso2am-3.1.0/
+```
 
 Update the params in the gen.js according to the patch info similar to bellow.
 
-( You can uncomment web apps according to the list of web apps your patching )
+( You can uncomment/uncomment web apps according to the list of web apps you'r patching )
 
 For an example following config is only checking the publisher and devportal webapps.
 
@@ -48,6 +50,11 @@ const artifactFolderName = '0390';
 ```
 You need to have node 10+ version installed.
 
-> node gen.js
+```bash
+node gen.js
+```
 
-running above will create the artifact folder and it also gen a script file to run in the browser console to add the files during PR analysis.
+running above command will create the artifact folder and copy the files accordingly to it.
+
+It will also gen a script file to run in the browser console to add the files during PR analysis.
+
