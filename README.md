@@ -1,6 +1,7 @@
 # artifact-creator
 This app can use to create update artifacts and the script to run in the console.
 
+### How to use
 copy the jar files and updated product to the same location as the gen.js script file and unzip them.
 
 If you list the files and folder, it should look like bellow.
@@ -16,7 +17,7 @@ Update the params in the gen.js according to the patch info similar to bellow.
 
 For an example following config is only checking the publisher and devportal webapps.
 
-
+```js
 // ******************************************************** //
 // ******************************************************** //
 // ******************************************************** //
@@ -44,7 +45,7 @@ const artifactFolderName = '0390';
 // ******************************************************** //
 // ******************************************************** //
 // ******************************************************** //
-
+```
 You need to have node 10+ version installed.
 
 > node gen.js
