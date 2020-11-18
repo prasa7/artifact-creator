@@ -2,7 +2,7 @@
 This app can use to create update artifacts and generate the script to run in the console.
 
 ### How to use
-copy the jar files from jenkins and last wum updated product to the same location as the gen.js script file and unzip them.
+copy the zip files from jenkins and last wum updated product to the same location as the gen.js script file and unzip them.
 
 If you list the folders, it should look like bellow. **The folder structure is important to run the script without errors.**
 
